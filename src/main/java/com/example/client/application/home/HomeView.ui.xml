@@ -1,9 +1,12 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-        xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:c="urn:import:com.example.client.application.components">
 
     <g:HTMLPanel>
         
         <p>Hello world!</p>
+        <c:Label text="label" target="{textBox}"/>
+        <c:TextBox ui:field="textBox" htmlId="~textBoxId~"/>
         
     </g:HTMLPanel>
 </ui:UiBinder>
